@@ -1,5 +1,38 @@
 //importacion de la letra
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 //Colores principales
+$color-fondo: #FFD04D; 
+$color-tarjeta: linear-gradient(120deg #055D6B, #00B0A6);
+$color-error: #FFBEBE; 
+$color-autocompletadp: #DEF3FE; 
+
+//color de fuente
+$color-letras-normales: #707070; 
+$color-letras-tarjeta: #EEEEEE; 
+$color-letras-error: #D62828;
+
+//Color de bordes
+$borde-error: 1px solid #EE1F1F; 
+
+//Letras 
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Poppins', sans-serif;
+}
 
 //Mixin Container
+@mixin container(){
+    margin: 0 auto;
+    display: inherit;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    @include container(); 
+}
