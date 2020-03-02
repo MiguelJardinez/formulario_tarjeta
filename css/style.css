@@ -23,21 +23,26 @@ input {
   border: solid 1px #8f8f8f;
   height: 50px;
   padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .tarjeta-diseno .tarjeta {
   position: absolute;
+  transition: all 800ms ease-in-out;
+  transform-style: preserve-3d;
   z-index: 2;
-  left: calc(50% - 189px);
+  left: calc(50% - 192px);
   box-shadow: 0 5px 10px rgba(90, 116, 148, 0.4);
-  top: 1rem;
+  top: 4rem;
   width: 33%;
-  height: 240px;
+  height: 260px;
   border-radius: 1rem;
+}
+.tarjeta-diseno .tarjeta.frontal:hover {
+  transform: rotateY(180deg);
 }
 .tarjeta-diseno .frontal {
   background: #3e6afc;
-  display: none;
 }
 .tarjeta-diseno .trasera {
   background: #FFBEBE;
@@ -59,14 +64,14 @@ input {
   align-items: center;
   position: absolute;
   left: calc(50% - 241px);
-  top: calc(50% - 178px);
+  top: calc(60% - 178px);
   width: 40%;
   background: white;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(90, 116, 148, 0.4);
   padding: 9rem 2rem 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .info-tarjeta .formulario {
   width: 100%;

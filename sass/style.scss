@@ -54,26 +54,30 @@ input{
     border: solid 1px $color-borde-input;
     height: 50px;
     padding: 1rem;
+    font-size: 1.2rem;
 }
 
 .tarjeta-diseno{
-
+    
     .tarjeta{
         position: absolute;
+        transition: all 800ms ease-in-out;
+        transform-style: preserve-3d;
         z-index: 2;
-        left: calc(50% - 189px);
+        left: calc(50% - 192px);
         box-shadow: $sombra-form;
-        top: 1rem;
+        top: 4rem;
         width: 33%;
-        height: 240px;
+        height: 260px;
         border-radius: 1rem;
-        
     }
-    
+
+    .tarjeta.frontal:hover{
+        transform: rotateY(180deg);
+    }
 
     & .frontal{
         background: $color-boton;
-        display: none;
     }
 
     & .trasera{
@@ -101,14 +105,14 @@ input{
     align-items: center;
     position: absolute;
     left: calc(50% - 241px);
-    top: calc(50% - 178px);
+    top: calc(60% - 178px);
     width: 40%;
     background: white;
     height: auto;
     border-radius: 10px;
     box-shadow: $sombra-form;
     padding: 9rem 2rem 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 
     .formulario{
         width: 100%;
