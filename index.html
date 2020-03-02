@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
 
-    <section>
-        <div class="container">
-            <form action="">
-    
-            </form>
+    <section class="tarjeta-frontal">
+        <div class="card-info">
+
         </div>
     </section>
-    
+
+    <section class="tarjeta-trasera">
+        <div class="card-info">
+
+        </div>
+    </section>
+
+    <section class="tarjeta">
+        <div class="container">
+            <div class="info-tarjeta">
+                <div class="entradas">
+
+                    <form action="" class="formulario" id="formulario">
+                        <label for="">
+                            <p>Nombre</p><input class="nombre" type="text" placeholder="Miguel Jardinez">
+                        </label>
+                        <label for="" class="numero">
+                            <p>Numero de la tarjeta</p><input class="numero" type="text"
+                                placeholder="Numero de la tarjeta">
+                        </label>
+                        <div class="fecha-tarjetas">
+                            <label class="año">
+                                <p>Año</p><input type="text" placeholder="Año">
+                            </label>
+                            <label class="mes">
+                                <p>Mes</p><input type="text" placeholder="Mes">
+                            </label>
+                            <label class="cvv">
+                                <p>CVV</p><input type="text" placeholder="CVV">
+                            </label>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="./js/jquery.js"></script>
     <script src="./js/script.js"></script>
     <script src="https://kit.fontawesome.com/ba56b759c0.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

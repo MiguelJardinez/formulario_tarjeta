@@ -9,7 +9,51 @@ h1, h2, h3, h4, h5, h6, p, a {
   box-sizing: border-box;
 }
 
+body {
+  background: #FFD04D;
+}
+
+input {
+  height: 40px;
+  padding: 0.5rem;
+}
+
+.info-tarjeta {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: calc(50% - 241px);
+  top: calc(50% - 178px);
+  width: 40%;
+  background: white;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+.info-tarjeta .formulario {
+  width: 100%;
+  height: 100%;
+}
+.info-tarjeta .formulario input {
+  margin-bottom: 3rem;
+}
+.info-tarjeta .formulario .nombre, .info-tarjeta .formulario .numero {
+  width: 100%;
+}
+.info-tarjeta .formulario .fecha-tarjetas {
+  display: flex;
+}
+.info-tarjeta .formulario .fecha-tarjetas .mes {
+  margin: 0 2rem;
+}
+.info-tarjeta .formulario .fecha-tarjetas input {
+  width: 100%;
+  margin: 0;
+}
+
 .container {
+  width: 1080px;
   margin: 0 auto;
   display: inherit;
 }
