@@ -13,9 +13,45 @@ body {
   background: #FFD04D;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 input {
-  height: 40px;
-  padding: 0.5rem;
+  border-radius: 5px;
+  border: solid 1px #8f8f8f;
+  height: 50px;
+  padding: 1rem;
+}
+
+.tarjeta-diseno .tarjeta {
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 189px);
+  box-shadow: 0 5px 10px rgba(90, 116, 148, 0.4);
+  top: 1rem;
+  width: 33%;
+  height: 240px;
+  border-radius: 1rem;
+}
+.tarjeta-diseno .frontal {
+  background: #3e6afc;
+  display: none;
+}
+.tarjeta-diseno .trasera {
+  background: #FFBEBE;
+}
+.tarjeta-diseno .trasera .decoracion {
+  position: relative;
+}
+.tarjeta-diseno .trasera .decoracion .barra {
+  position: absolute;
+  z-index: 3;
+  height: 30px;
+  width: 100%;
+  top: 2rem;
+  background: #707070;
 }
 
 .info-tarjeta {
@@ -27,16 +63,17 @@ input {
   width: 40%;
   background: white;
   height: auto;
-  border-radius: 15px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(90, 116, 148, 0.4);
+  padding: 9rem 2rem 2rem;
+  margin-bottom: 3rem;
 }
 .info-tarjeta .formulario {
   width: 100%;
   height: 100%;
 }
 .info-tarjeta .formulario input {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .info-tarjeta .formulario .nombre, .info-tarjeta .formulario .numero {
   width: 100%;
@@ -50,6 +87,21 @@ input {
 .info-tarjeta .formulario .fecha-tarjetas input {
   width: 100%;
   margin: 0;
+}
+.info-tarjeta .formulario .boton {
+  display: flex;
+  text-align: center;
+  margin-top: 2rem;
+  background: #3e6afc;
+  height: 50px;
+  border-radius: 8px;
+}
+.info-tarjeta .formulario .boton a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {

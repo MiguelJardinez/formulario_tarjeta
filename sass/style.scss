@@ -6,13 +6,15 @@ $color-fondo: #FFD04D;
 $color-tarjeta: linear-gradient(120deg #055D6B, #00B0A6);
 $color-bg: linear-gradient(90deg #E1AA12, #FF943B );
 $color-error: #FFBEBE; 
+$color-boton: #3e6afc; 
 $color-autocompletadp: #DEF3FE; 
 
 //Box-shadow
-$sombra-form: 0 3px 6px rgba(0,0,0, 0.2);
+$sombra-form: 0 5px 10px rgba(90, 116, 148, 0.4);
 
 //color de fuente
 $color-letras-normales: #707070; 
+$color-borde-input: #8f8f8f; 
 $color-letras-tarjeta: #EEEEEE; 
 $color-letras-error: #D62828;
 
@@ -41,10 +43,58 @@ body{
     background: $color-fondo;
 }
 
-input{
-    height: 40px;
-    padding: 0.5rem;
+a{
+    color: white;
+    text-decoration: none;
 }
+
+
+input{
+    border-radius: 5px;
+    border: solid 1px $color-borde-input;
+    height: 50px;
+    padding: 1rem;
+}
+
+.tarjeta-diseno{
+
+    .tarjeta{
+        position: absolute;
+        z-index: 2;
+        left: calc(50% - 189px);
+        box-shadow: $sombra-form;
+        top: 1rem;
+        width: 33%;
+        height: 240px;
+        border-radius: 1rem;
+        
+    }
+    
+
+    & .frontal{
+        background: $color-boton;
+        display: none;
+    }
+
+    & .trasera{
+        background: $color-error;
+
+        & .decoracion{
+            position: relative;
+
+            & .barra{
+                position: absolute;
+                z-index: 3;
+                height: 30px;
+                width: 100%;
+                top: 2rem;
+                background: $color-letras-normales;
+            }
+        }
+    }
+}
+
+
 
 .info-tarjeta{
     display: flex;
@@ -55,16 +105,17 @@ input{
     width: 40%;
     background: white;
     height: auto;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: $sombra-form;
-    padding: 2rem;
+    padding: 9rem 2rem 2rem;
+    margin-bottom: 3rem;
 
     .formulario{
         width: 100%;
         height: 100%;
 
         & input{
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
 
         & .nombre, .numero{
@@ -81,6 +132,23 @@ input{
                 & input {
                     width: 100%;
                     margin: 0;
+                }
+            }
+
+            & .boton{
+                display: flex;
+                text-align: center;
+                margin-top: 2rem;
+                background: $color-boton;
+                height: 50px;
+                border-radius: 8px;
+
+                 & a{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
         }
