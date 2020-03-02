@@ -59,21 +59,16 @@ input{
 
 .tarjeta-diseno{
     
-    .tarjeta{
+    & .tarjeta{
         position: absolute;
-        transition: all 800ms ease-in-out;
-        transform-style: preserve-3d;
-        z-index: 2;
         left: calc(50% - 192px);
-        box-shadow: $sombra-form;
         top: 4rem;
+        z-index: 4;
+        transform-style: preserve-3d;
+        box-shadow: $sombra-form;
         width: 33%;
         height: 260px;
         border-radius: 1rem;
-    }
-
-    .tarjeta.frontal:hover{
-        transform: rotateY(180deg);
     }
 
     & .frontal{
@@ -82,6 +77,7 @@ input{
 
     & .trasera{
         background: $color-error;
+
 
         & .decoracion{
             position: relative;

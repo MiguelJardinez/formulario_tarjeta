@@ -28,18 +28,14 @@ input {
 
 .tarjeta-diseno .tarjeta {
   position: absolute;
-  transition: all 800ms ease-in-out;
-  transform-style: preserve-3d;
-  z-index: 2;
   left: calc(50% - 192px);
-  box-shadow: 0 5px 10px rgba(90, 116, 148, 0.4);
   top: 4rem;
+  z-index: 4;
+  transform-style: preserve-3d;
+  box-shadow: 0 5px 10px rgba(90, 116, 148, 0.4);
   width: 33%;
   height: 260px;
   border-radius: 1rem;
-}
-.tarjeta-diseno .tarjeta.frontal:hover {
-  transform: rotateY(180deg);
 }
 .tarjeta-diseno .frontal {
   background: #3e6afc;
