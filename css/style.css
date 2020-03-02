@@ -26,27 +26,39 @@ input {
   font-size: 1.2rem;
 }
 
-.tarjeta-diseno .tarjeta {
+.tarjeta-diseno :hover .tarjeta-interior {
+  transform: rotateY(180deg);
+}
+.tarjeta-diseno .tarjeta-interior {
+  transition: all 400ms ease-in-out;
+  position: relative;
+  transform-style: preserve-3d;
+  z-index: 5;
+}
+.tarjeta-diseno .tarjeta-interior .tarjeta {
   position: absolute;
-  left: calc(50% - 192px);
+  left: calc(50% - 193px);
   top: 4rem;
   z-index: 4;
-  transform-style: preserve-3d;
   box-shadow: 0 5px 10px rgba(90, 116, 148, 0.4);
-  width: 33%;
-  height: 260px;
+  height: 270px;
   border-radius: 1rem;
+  backface-visibility: hidden;
 }
-.tarjeta-diseno .frontal {
+.tarjeta-diseno .tarjeta-interior .frontal {
   background: #3e6afc;
+  width: 450px;
 }
-.tarjeta-diseno .trasera {
+.tarjeta-diseno .tarjeta-interior .trasera {
   background: #FFBEBE;
+  width: 450px;
+  left: calc(50% - 260px);
+  transform: rotateY(180deg);
 }
-.tarjeta-diseno .trasera .decoracion {
+.tarjeta-diseno .tarjeta-interior .trasera .decoracion {
   position: relative;
 }
-.tarjeta-diseno .trasera .decoracion .barra {
+.tarjeta-diseno .tarjeta-interior .trasera .decoracion .barra {
   position: absolute;
   z-index: 3;
   height: 30px;
